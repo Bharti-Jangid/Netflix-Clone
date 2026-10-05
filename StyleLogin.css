@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero{
+    margin-top: 2px;
+    background-color: #212121;
+    height: 100vh;
+    overflow-y: auto;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f562aaf4-5dbb-4603-a32b-6ef6c2230136/dh0w8qv-9d8ee6b2-b41a-4681-ab9b-8a227560dc75.jpg/v1/fill/w_1280,h_720,q_75,strp/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6Ii9mL2Y1NjJhYWY0LTVkYmItNDYwMy1hMzJiLTZlZjZjMjIzMDEzNi9kaDB3OHF2LTlkOGVlNmIyLWI0MWEtNDY4MS1hYjliLThhMjI3NTYwZGM3NS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.FScrpAAFnKqBVKwe2syeiOww6mfH6avq-DRHZ_uFVNw);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow-y: auto;
+}
+
+ .hero ::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgb(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+.LoginNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+#Netflix{
+   color: #E50914;
+   font-size: 200px;  
+   padding-right: 30%;
+}
+
+.Login{
+    font-size: 70px;
+    padding-top: 80px;
+    padding-right: 9%;
+    display: flex;
+    gap: 80px;
+    
+}
+select{
+    font-size: 80px;
+    padding-left: 150px;
+    border-radius: 30px;
+    background-image: url(logo.png);
+    background-size: 60px;
+    border: 4px solid white;
+    background-position: 50px center;
+    height: 130px;
+    width: 500px;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-color: transparent;
+    color: white;
+}
+
+#Signin{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    border: 4px solid white;
+    background-color: #E50914;
+    border-radius: 30px;
+    height: 130px;
+    width: 400px;
+    text-align: center;
+}
+
+.TextHome{
+    color: white;
+   font-size: 115px;
+    padding-top: 470px;
+}
+
+#text1{
+    font-weight: 800;
+}
+#text2{
+    font-weight: 800;
+}
+
+#text3{
+    font-size: 80px;
+    color: white;
+    padding-top: 20px;
+}
+p{
+    color: white;
+    font-size: 68px;
+    padding: 90px;
+}
+
+#input{
+    font-size: 140px;
+    width: 1600px;
+    background: transparent;
+    border-radius: 20px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    border: 2px solid white;
+
+}
+input::placeholder{
+    font-size: 60px;
+    color: grey;
+
+}
+
+#button{
+    height: 250px;
+    width: 600px;
+     font-size: 80px;
+    background-color: #E50914;
+    color: white;
+    border-radius: 20px;
+    padding: 30px 40px;
+}
+.emailinput{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+}
+
+
+.fakecurve{
+    width: 100%;
+    height: 60px;
+    margin-top: -60px;
+    border-top: 3px solid transparent;
+    border-radius: 100% 100%;
+    background: linear-gradient(
+        to right,
+        #ff2f92,
+        #5b6cff,
+        #ff2f92
+    );
+    transform: translateY(40px);
+}
+
+section{
+    background-color: #000000;
+    margin-top: -110px;
+    z-index: 1;
+     
+   
+}
+.trendingtxt1{
+    color: white;
+    font-size: 90px;
+    padding-top: 400px;
+    padding-left: 650px;
+    font-weight: 500;
+}
+
+
+.arrowkey{
+    height: 200px;
+    width: 200px;
+   background-color: #E50914;
+
+
+}
+
+.movies{
+    display: flex;
+    overflow-x: auto;
+scroll-behavior: smooth;
+-ms-overflow-style: none;
+    padding-left: 700px;
+     gap: 300px;
+     margin-right: 12%;
+     
+}
+
+.movies ::-webkit-scrollbar{
+    display: none;
+}
+
+.card {
+    padding-top : 100px;
+    position: relative;
+    min-width: 750px;
+    height: 1100px;
+    border-radius: 50px;
+    flex: 0 0 auto;
+    overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+ 
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+   transition: transform 0.4s ease;
+   border-radius: 7%;
+}
+
+.card :hover{
+     transform: translateY(-6px) scale(1.10);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.6);
+}
+
+
+/* .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(0, 0,0.6);
+    color: #fff;
+    background-color: red;
+    border: none;
+    font-size: 50px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 5;
+
+}
+
+.scroll-btn left{ left: 10px;}
+.scroll-btn right{ right: 10px;} */
+
+.MoreReasontxt{
+    color: white;
+    font-size: 90px;
+    padding-top: 300px;
+    padding-left: 650px;
+    font-weight: 500;
+}
+
+.MoreReason{
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    gap: 60px;
+    padding-top: 100px;
+    padding-left: 580px;
+    
+}
+
+.box{
+    height: 1200px;
+    width: 990px;
+    background-color: #1C1A33;
+    border-radius: 5%;
+}
+
+.box h3{
+    padding-top: 150px;
+    padding-left: 30px;
+    color: white;
+    font-size: 80px;
+}
+icon{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 280px;
+    bottom: 100px;
+}
+
+.icon i{
+    position: absolute;
+    font-size: 200px;
+    place-items: right;
+   padding-left: 700px;
+   bottom: 100px;
+   opacity: 0.8;
+   /* color: #E50914; */
+    background: linear-gradient(to right,#872370, #E50914,#F58DBF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.Frequent h2{
+      color: white;
+    font-size: 90px;
+    padding-top: 300px;
+    padding-left: 550px;
+    font-weight: 500;
+}
+
+.faq{
+    font-size: 90px;
+    padding: 90px 90px;
+    width: 80%;
+    height: 300px;
+    margin-top:100px;
+   margin-left: 10%;
+    color: white;
+    background-color: #414141   ;
+    overflow: hidden;
+    gap: 30px;
+}
+
+#txt5{
+    margin-top: 200px;
+}
+
+.lsttxt{
+    font-size: 70px;
+    color: white;
+    margin-top: 300px;
+    padding-left: 1000px;
+}
+
+.lsttxt a{
+    color: white;
+}
+
+.footer{
+    font-size: 60px;
+    color: white;
+    margin: auto;
+
+
+}
+.footer-question{
+    padding-left: 800px;
+    margin-top: 1%;
+}
+.footer-nav{
+    padding-left: 800px;
+     display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       gap: 40px;
+}
+
+.footer-nav a{
+    color: white;
+}
+.Language1{
+    background-color: #414141;
+}
+.Langslct{
+    padding-right: 800px;
+    margin-top: 2%;
+    margin-left: 800px;
+    
+}
+.footer-country{
+    padding-left: 800px;
+    margin-top: 1%;
+}
+.hero1{
+    margin-top: 2px;
+    height: 100%;
+   overflow: hidden;
+    position: relative;
+      background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f562aaf4-5dbb-4603-a32b-6ef6c2230136/dh0w8qv-9d8ee6b2-b41a-4681-ab9b-8a227560dc75.jpg/v1/fill/w_1280,h_720,q_75,strp/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6Ii9mL2Y1NjJhYWY0LTVkYmItNDYwMy1hMzJiLTZlZjZjMjIzMDEzNi9kaDB3OHF2LTlkOGVlNmIyLWI0MWEtNDY4MS1hYjliLThhMjI3NTYwZGM3NS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.FScrpAAFnKqBVKwe2syeiOww6mfH6avq-DRHZ_uFVNw); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+   
+}
+.SigninBody{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero1::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+     background: rgb(0, 0, 0,0.7);
+    z-index: 1; 
+ } 
+ 
+  .txt01{
+    position: relative;
+    color: #d6121c;
+    font-size: 190px;
+    font-weight: 720;
+    padding: 50px 600px;
+    z-index: 2;
+ }
+ .signin-box{
+    display: grid;
+    font-size: 70px;
+    color: white;
+     position: relative;
+    z-index: 2;
+    border-radius: 10px;
+    height: 2300px;
+    width: 1900px;
+   margin-left: 32%;
+   background: rgb(0, 0,0,0.6);
+ }
+ .sign-intxt{
+    padding-top: 150px;
+    padding-left: 200px;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+    font-size: 80px;
+    color: white;
+ }
+.inp{
+    margin-top: 100px;
+     position: relative;
+    z-index: 2;
+    font-size: 60px;
+   background-color: #111413;
+   height: 220px;
+   padding-left: 40px;
+   width: 80%;
+   margin-left: 10%;
+   border-radius: 20px;
+   border: 3px solid white;
+}
+.btn{
+     position: relative;
+    z-index: 2;
+    font-size: 60px;
+    color: white;
+    background-color: #E50914;
+    height: 220px;
+    width: 80%;
+     border: 3px solid white;
+    margin-top: 100px;
+    margin-left: 10%;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+.btn1{
+     position: relative;
+    z-index: 2;
+    font-size: 60px;
+    color: white;
+    background-color: #282B2D;
+    height: 220px;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 20px;
+     border: 3px solid white;
+     cursor: pointer;
+
+}
+#p1{
+     position: relative;
+    z-index: 2;
+    font-size: 70px;
+    color: white;
+   display: flex;
+   justify-content: center;
+}
+
+.frgt{
+      position: relative;
+    z-index: 2;
+    font-size: 70px;
+    color: white;
+      display: flex;
+   justify-content: center;
+   margin-top: 40px;
+}
+.inp1{
+  position: relative;
+  z-index: 2;
+  font-size: 70px;
+  margin-top: 100px;
+ margin-left: 10%;
+ display: flex;
+ gap: 20px; 
+}
+
+
+#p2{
+     position: relative;
+    z-index: 2;
+    font-size: 70px;
+    color: white;
+    margin-left: 6%;
+    margin-bottom: 80px;
+}
+#check{
+   height: 60px;
+   width: 80px;
+   margin-top: 15px;
+    cursor: pointer;
+}
+.sec2{
+    margin-top: 100px;
+}
+
+.footer1{
+ 
+    font-size: 60px;
+    color: white;
+    margin-top: 100px;
+}
+.footer-question1{
+    padding-left: 800px;
+    margin-top: 1%;
+}
+.footer-nav1{
+    padding-left: 800px;
+     display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       gap: 40px;
+}
+
+.footer-nav1 a{
+    color: white;
+}
+.Language12{
+    background-color: #414141;
+}
+.Langslct1{
+    padding-right: 800px;
+    margin-top: 2%;
+    margin-left: 800px;
+    
+}
+.footer-country1{
+    padding-left: 800px;
+    margin-top: 1%;
+}
+
+.hero2{
+    background-color: #000000;
+}
